@@ -28,19 +28,19 @@ CMD [ "/docker-gs-ping" ]
 
 
 ### From <base_image_adı:version>: 
-+ Proje hangi kütüphanede yazıldıysa onun base image’ını belirttiğimiz kısımdır. Benim örnek projem go ile yazıldığı için _golang:1.16-alpine_** imagenı base almasını söyledim.
++ Proje hangi kütüphanede yazıldıysa onun base image’ını belirttiğimiz kısımdır. Benim örnek projem go ile yazıldığı için **_golang:1.16-alpine_** imagenı base almasını söyledim.
 
 ###  WORKDIR <klasör_yolu>:
-+ Projemiz dosyalarını docker container’ın da hangi klasörün altına kopyalayacağını belirttiğimiz kısımdır. Projemizde _/app_** klasörünün altına kopyalarız.
++ Projemiz dosyalarını docker container’ın da hangi klasörün altına kopyalayacağını belirttiğimiz kısımdır. Projemizde **_/app_** klasörünün altına kopyalarız.
 
 ### COPY <dosyalar> <kopyalanacak_klasör_yolu>: 
-+ Belirtilen dosyaların belirtilen yere kopyalanmasını söylediğimiz kısımdır. Projede _ go.mod_** ve _go.sum_** dosyalarını kopyalarız. 
++ Belirtilen dosyaların belirtilen yere kopyalanmasını söylediğimiz kısımdır. Projede **_ go.mod_** ve **_go.sum_** dosyalarını kopyalarız. 
   
 ### RUN <komut>: 
-+ Docker containerları hazırlanacağı sırada çalışması gereken komutlar için kullanılır. Projede go build -o /docker-gs-ping komutu çalıştırılır.
++ Docker containerları hazırlanacağı sırada çalışması gereken komutlar için kullanılır. Projede **_go build -o /docker-gs-ping_** komutu çalıştırılır.
   
 ### EXPOSE <port_numarası>:
-+ Oluşacak imaja ulaşmak için kullanılacak olan portun belirtildiği kısımdır. Projede _8080_** portu kullanılır. Proje ayağa kalktıktan sonra http://localhost:8080/ şeklinde sayfaya ulaşılabilir.
++ Oluşacak imaja ulaşmak için kullanılacak olan portun belirtildiği kısımdır. Projede **_8080_** portu kullanılır. Proje ayağa kalktıktan sonra http://localhost:8080/ şeklinde sayfaya ulaşılabilir.
   
 ### CMD [<komutlar>]:
 + Docker containerında projemizin çalışması için kullandığımız komuttur. Bu komut docker run komutu çalıştırılırken düzenlenebilir.
