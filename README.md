@@ -1,5 +1,6 @@
-# golang-project ![alt text](https://www.loginradius.com/blog/static/30bb9b9901e76f3498d68913a0675ea9/03979/index.png "Logo Title Text 1") 
+# Golang-project 
 Golang kod örneği.
+![alt text](https://www.loginradius.com/blog/static/30bb9b9901e76f3498d68913a0675ea9/03979/index.png "Logo Title Text 1") 
 
 ### Golang projesinin dockerize edilmesi.
 Kod yazıldıktan sonra Dockerfile oluşturulur.
