@@ -1,5 +1,7 @@
-# golang-project
+# golang-project 
 Golang kod örneği.
+Inline-style: 
+![alt text](https://tr.wikipedia.org/wiki/Go_(programlama_dili)#/media/Dosya:Go_Logo_Blue.svg "Logo Title Text 1")
 
 ### Golang projesinin dockerize edilmesi.
 Kod yazıldıktan sonra Dockerfile oluşturulur.
@@ -34,7 +36,7 @@ CMD [ "/docker-gs-ping" ]
 + Projemiz dosyalarını docker container’ın da hangi klasörün altına kopyalayacağını belirttiğimiz kısımdır. Projemizde **_/app_** klasörünün altına kopyalarız.
 
 ### COPY <dosyalar> <kopyalanacak_klasör_yolu>: 
-+ Belirtilen dosyaların belirtilen yere kopyalanmasını söylediğimiz kısımdır. Projede **_ go.mod_** ve **_go.sum_** dosyalarını kopyalarız. 
++ Belirtilen dosyaların belirtilen yere kopyalanmasını söylediğimiz kısımdır. Projede **_go.mod_** ve **_go.sum_** dosyalarını kopyalarız. 
   
 ### RUN <komut>: 
 + Docker containerları hazırlanacağı sırada çalışması gereken komutlar için kullanılır. Projede **_go build -o /docker-gs-ping_** komutu çalıştırılır.
@@ -60,3 +62,4 @@ sudo docker ps
 
 ### Docker Hub a image i Push Etmek.
 sudo docker push [image_name]
+  
