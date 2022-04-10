@@ -52,8 +52,8 @@ CMD [ "/docker-gs-ping" ]
 sudo  docker build -t [image_name] .
   
 ### Image Run Etmek
-sudo docker run -dp 8080:8080 [image_name] 
-+ http://localhost:8080/ ile sayfa gelir.
+sudo docker run -dp 8085:8080 [image_name] 
++ http://localhost:8085/ ile sayfa gelir.
 
 ### Çalışan Process leri Görmek
 sudo docker ps 
