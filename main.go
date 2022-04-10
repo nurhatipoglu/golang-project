@@ -16,7 +16,7 @@ func main() {
 	e.Use(middleware.Recover())
 
 	e.GET("/", func(c echo.Context) error {
-		return c.HTML(http.StatusOK, "170419011 Nur Hatipoğlu-Açık Kaynak Kodlu Yazılımlar Dockerize Örnek Projesi")
+		return c.HTML(http.StatusOK, "170419011 Nur Hatipoğlu-Açık Kaynak Kodlu Yazılımlar Dockerize Örnek GOLANG Vize Projesi")
 	})
 
 	e.GET("/ping", func(c echo.Context) error {
