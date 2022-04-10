@@ -7,6 +7,26 @@ Kod yazıldıktan sonra Dockerfile oluşturulur.
 ---
 
 ## Dockerfile Oluşturmak 
+
+```javascript
+FROM golang:1.16-alpine
+
+WORKDIR /app
+
+COPY go.mod ./
+COPY go.sum ./
+RUN go mod download
+
+COPY *.go ./
+
+RUN go build -o /docker-gs-ping
+
+EXPOSE 8080
+
+CMD [ "/docker-gs-ping" ]
+```
+
+
 ### From <base_image_adı:version>: 
 + Proje hangi kütüphanede yazıldıysa onun base image’ını belirttiğimiz kısımdır. Benim örnek projem go ile yazıldığı için _golang:1.16-alpine_** imagenı base almasını söyledim.
 
