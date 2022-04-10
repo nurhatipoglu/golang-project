@@ -1,7 +1,5 @@
-# golang-project 
+# golang-project ![alt text](https://www.loginradius.com/blog/static/30bb9b9901e76f3498d68913a0675ea9/03979/index.png "Logo Title Text 1") 
 Golang kod örneği.
-Inline-style: 
-![alt text](https://tr.wikipedia.org/wiki/Go_(programlama_dili)#/media/Dosya:Go_Logo_Blue.svg "Logo Title Text 1")
 
 ### Golang projesinin dockerize edilmesi.
 Kod yazıldıktan sonra Dockerfile oluşturulur.
