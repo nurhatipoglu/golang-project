@@ -1,9 +1,22 @@
 # Golang-project 
+### 170419011 Nur Hatipoğlu Açık Kaynak Kodlu Yazılımlar Vize Projesi
 Golang kod örneği.
 ![alt text](https://www.loginradius.com/blog/static/30bb9b9901e76f3498d68913a0675ea9/03979/index.png "Logo Title Text 1") 
 
 ### Golang projesinin dockerize edilmesi.
 Kod yazıldıktan sonra Dockerfile oluşturulur.
+
+Öncelikle oluşturduğumuz docker image'i indirmek için : $ docker pull nurhatipoglu/go-project:v1
+
+Git üzerinden kodlarımızı oluşturduğumuz klasöre klonlamamız gerekiyor.
+
+Kodlarımız indikten sonra yapmamız gereken indirdiğimiz image'i çalıştırmamız gerekiyor.
+
+$ sudo docker run -dp 8085:8080 go-project:v1
+
+docker ps komutunu kullanarak çalışan imageleri görebilirsiniz.
+
+İnternet tarayıcımıza girdikten sonra http://localhost:8085/ çalıştırdığımızda ekranımızda String bir metin göreceğiz.
 
 ---
 
